@@ -26,11 +26,14 @@ export default function Register() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('/api/register', {
-        username,
-        email,
-        password,
-      });
+      const response = await axios.post(
+        'https://affshop-backend-production.up.railway.app/api/register',
+        {
+          username,
+          email,
+          password,
+        }
+      );
 
       if (response.status === 201) {
         window.location.href = '/';

@@ -24,10 +24,13 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('/api/login', {
-        email,
-        password,
-      });
+      const response = await axios.post(
+        'https://affshop-backend-production.up.railway.app/api/login',
+        {
+          email,
+          password,
+        }
+      );
 
       if (response.status === 200) {
         window.location.href = '/';

@@ -29,7 +29,9 @@ const CommentSection = () => {
 
   useEffect(() => {
     axios
-      .get(`/api/getComment/${videoId}`)
+      .get(
+        `https://affshop-backend-production.up.railway.app/api/getComment/${videoId}`
+      )
       .then(response => {
         setComments(response.data);
       })

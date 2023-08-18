@@ -61,15 +61,19 @@ const EditUser = () => {
     try {
       console.log(username, pict);
 
-      const response = await axios.post('/api/profile', {
-        username,
-        pict,
-      });
+      const response = await axios.post(
+        'https://affshop-backend-production.up.railway.app/api/profile',
+        {
+          username,
+          pict,
+        }
+      );
 
       console.log(response);
 
       if (response.status === 200) {
-        window.location.href = '/profile';
+        window.location.href =
+          'https://affshop-backend-production.up.railway.app/profile';
       }
     } catch (error) {
       toast({

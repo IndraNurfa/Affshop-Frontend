@@ -8,7 +8,7 @@ const useSession = () => {
     const [session, setSession] = useState(null);
 
     useEffect(() => {
-        axios.get('/api/getSession', {
+        axios.get('https://affshop-backend-production.up.railway.app/api/getSession', {
                 withCredentials: true,
             })
             .then(response => {
