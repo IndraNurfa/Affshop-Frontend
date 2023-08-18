@@ -8,7 +8,7 @@ const useVideoPlayer = (videoId) => {
     const [video, setVideo] = useState('');
 
     useEffect(() => {
-        axios.get(`https://affshop-backend-production.up.railway.app/api/getVideo/${videoId}`)
+        axios.get(`/api/getVideo/${videoId}`)
             .then(response => {
                 setVideo(response.data);
             })

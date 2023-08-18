@@ -14,7 +14,7 @@ const Homepage = () => {
   useEffect(() => {
     axios
       .get(
-        'https://affshop-backend-production.up.railway.app/api/getThumbnails'
+        '/api/getThumbnails'
       )
       .then(response => {
         setVideos(response.data);

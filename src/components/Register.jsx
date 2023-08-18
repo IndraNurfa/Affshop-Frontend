@@ -27,7 +27,7 @@ export default function Register() {
 
     try {
       const response = await axios.post(
-        'https://affshop-backend-production.up.railway.app/api/register',
+        '/api/register',
         {
           username,
           email,

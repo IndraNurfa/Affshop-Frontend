@@ -8,7 +8,7 @@ const useProduct = (videoId) => {
     const [product, setProduct] = useState();
 
     useEffect(() => {
-        axios.get(`https://affshop-backend-production.up.railway.app/api/getProduct/${videoId}`)
+        axios.get(`/api/getProduct/${videoId}`)
             .then(response => {
                 setProduct(response.data);
             })

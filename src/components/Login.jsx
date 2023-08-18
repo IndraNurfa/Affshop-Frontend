@@ -25,7 +25,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        'https://affshop-backend-production.up.railway.app/api/login',
+        '/api/login',
         {
           email,
           password,

@@ -19,7 +19,7 @@ const Search = () => {
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    const url = `https://affshop-backend-production.up.railway.app/api/getThumbnails${
+    const url = `/api/getThumbnails${
       query ? `?query=${query}` : ''
     }`;
     axios

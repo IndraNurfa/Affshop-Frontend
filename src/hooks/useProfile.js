@@ -8,7 +8,7 @@ const useProfile = () => {
     const [profile, setProfile] = useState('');
 
     useEffect(() => {
-        axios.get('https://affshop-backend-production.up.railway.app/api/getProfile', {
+        axios.get('/api/getProfile', {
                 withCredentials: true,
             })
             .then(response => {

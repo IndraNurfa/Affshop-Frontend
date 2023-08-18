@@ -30,7 +30,7 @@ const CommentSection = () => {
   useEffect(() => {
     axios
       .get(
-        `https://affshop-backend-production.up.railway.app/api/getComment/${videoId}`
+        `/api/getComment/${videoId}`
       )
       .then(response => {
         setComments(response.data);
